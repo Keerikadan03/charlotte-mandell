@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { X, Linkedin } from 'lucide-react';
 import authorimg from "../assets/author-img.png";
 
-import xIcon from "../assets/icons/x.svg";
-import linkedinIcon from "../assets/icons/linkedin.svg";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
