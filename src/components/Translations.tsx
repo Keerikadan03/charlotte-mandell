@@ -19,7 +19,7 @@ const Translations = () => {
               className="md:basis-1/3 lg:basis-1/5"
               key={translation.title || index}
             >
-              <div className="bg-white rounded-lg shadow-sm w-64 py-5 mx-auto flex items-center justify-center">
+              <div className="bg-white rounded-lg shadow my-5 w-64 py-5 mx-auto flex items-center justify-center">
                   <div className="space-y-4">
                     <h3 className="text-lg font-medium min-h-16" title={translation.title}>
                       {translation.title.length > 25
