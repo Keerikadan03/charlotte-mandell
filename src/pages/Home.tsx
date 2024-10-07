@@ -27,7 +27,7 @@ const Home = () => {
           />
         
         </div>
-        <div className="p-8 text-center mt-[-40px]">
+        <div className="p-8 text-center">
           <motion.h1
             className="text-3xl font-bold mb-2"
             initial={{ opacity: 0 }}
