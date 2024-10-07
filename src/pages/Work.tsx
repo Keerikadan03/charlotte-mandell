@@ -4,6 +4,7 @@ import TitleSection from "@/components/typography/TitleSection";
 import Collection from "@/components/Collection";
 import Translations from "@/components/Translations";
 import Section from "@/components/Section";
+import CriticalWritings from "@/components/CriticalWriting";
 
 const criticalWritings = {
   writings: [
@@ -134,41 +135,7 @@ const Work = () => {
         {/* Critical Writing */}
         <Section>
         <TitleSection title="Critical Writing" />
-        <div className="grid gap-8 md:grid-cols-2 pt-6 px-6">
-          {criticalWritings.writings.map((writing, index) => (
-            <div
-              key={index}
-              className="rounded-lg border border-neutral-200 border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950 dark:border-neutral-800"
-            >
-              <h3 className="mb-2 text-xl font-semibold">{writing.title}</h3>
-              <p className="mb-4 text-gray-500 dark:text-gray-400">
-                {writing.details}
-              </p>
-              <div className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-                <p>
-                  <strong>Editors:</strong> {writing.editors}
-                </p>
-                <p>
-                  <strong>Publisher:</strong> {writing.publisher}
-                </p>
-                <p>
-                  <strong>Location:</strong> {writing.location}
-                </p>
-                <p>
-                  <strong>Year:</strong> {writing.year}
-                </p>
-              </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                <strong>Pages:</strong> {writing.pages}
-              </p>
-              {writing.translatedBy && (
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  <strong>Translated by:</strong> {writing.translatedBy}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
+          <CriticalWritings writings={criticalWritings.writings}/>
         </Section>
 
         {/* awards & honors */}
