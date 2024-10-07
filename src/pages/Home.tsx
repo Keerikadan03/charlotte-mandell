@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { X, Linkedin } from 'lucide-react';
 import authorimg from "../assets/author-img.png";
 
-
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -12,20 +11,19 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="flex p-4 items-center justify-center" style={{ minHeight: 'calc(100vh - 80px)' }}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
         transition={{ duration: 0.8 }}
-        className="max-w-2xl w-full bg-white rounded-lg shadow-xl overflow-hidden"
+        className="md:max-w-2xl w-full bg-white rounded-lg shadow-xl overflow-hidden"
       >
         <div className="relative">
           <img
             src={authorimg}
             alt="Author background"
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-cover"
           />
-        
         </div>
         <div className="p-8 text-center">
           <motion.h1

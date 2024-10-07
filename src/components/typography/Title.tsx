@@ -2,11 +2,15 @@ interface TitleProps {
   title: string;
   description: string;
   background: string;
+  tailwindClasses?: string; // Add this line to accept additional Tailwind CSS classes
 }
 
-export function Title({ title, description, background }: TitleProps) {
+export function Title({ title, description, background, tailwindClasses = '' }: TitleProps) {
   return (
-    <div className="bg-cover bg-center py-32 grayscale text-white text-center" style={{backgroundImage: `url(${background})`, backgroundBlendMode: "multiply" }}>
+    <div 
+      className={`bg-cover bg-center py-32 grayscale text-white text-center ${tailwindClasses}`} // Add tailwindClasses here
+      style={{ backgroundImage: `url(${background})`, backgroundBlendMode: "multiply" }}
+    >
       <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
         {title}
       </h1>
