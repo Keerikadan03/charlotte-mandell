@@ -5,6 +5,7 @@ import Collection from "@/components/Collection";
 import Translations from "@/components/Translations";
 import Section from "@/components/Section";
 import CriticalWritings from "@/components/CriticalWriting";
+import AwardsAndHonors from "@/components/Awards";
 
 const criticalWritings = {
   writings: [
@@ -141,28 +142,7 @@ const Work = () => {
         {/* awards & honors */}
         <Section>
         <TitleSection title="Awards & Honors" />
-        <div className="p-6 sm:p-10 max-w-2xl mx-auto">
-          <div className="after:absolute after:inset-y-0 after:w-px after:bg-gray-500/20 relative pl-6 after:left-0 grid gap-10 dark:after:bg-gray-400/20">
-            {awardsAndHonors.items.map((item, index) => (
-              <div
-                className="grid gap-1 relative max-w-6xl bg-white p-6 shadow rounded-md"
-                key={index}
-              >
-                <div className="aspect-square w-3 bg-gray-900 rounded-full absolute left-0 translate-x-[-29.5px] z-10 top-1 dark:bg-gray-50" />
-                <div className="font-medium">{item.year}</div>
-                <div className="text-xl font-semibold opacity-75">
-                  {item.awardName}
-                </div>
-                <div>{item.awardedBy}</div>
-                {item.extra && (
-                  <div className="text-gray-500 dark:text-gray-400">
-                    {item.extra}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <AwardsAndHonors awards={awardsAndHonors.items}/>
         </Section>
       </div>
     </div>
