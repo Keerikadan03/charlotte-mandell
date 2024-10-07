@@ -109,7 +109,7 @@ const awardsAndHonors = {
 
 const Work = () => {
   return (
-    <div>
+    <div className="p-4">
       <Title
         title="Bibliography"
         description="Catalogs of my published works—books, articles, translations and..."
