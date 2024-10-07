@@ -23,9 +23,9 @@ const CriticalWritings: React.FC<CriticalWritingsProps> = ({ writings }) => {
       {writings.map((writing, index) => (
         <div
           key={index}
-          className="rounded-xl overflow-hidden bg-white shadow-lg dark:bg-gray-950 dark:shadow-none transition-transform transform hover:scale-105"
+          className="rounded-xl overflow-hidden bg-white shadow-lg dark:bg-gray-950 dark:shadow-none transition-transform transform hover:scale-105 flex flex-col"
         >
-          <div className="p-6">
+          <div className="p-6 flex flex-col flex-grow">
             <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
               {writing.title}
             </h3>
@@ -37,7 +37,7 @@ const CriticalWritings: React.FC<CriticalWritingsProps> = ({ writings }) => {
               <span>{writing.publication}</span>
             </div>
 
-            <div className="border-t border-gray-200 dark:border-gray-800 mt-4 pt-4">
+            <div className="border-t border-gray-200 dark:border-gray-800 my-4 pt-4">
               <div className="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center">
                   <Users className="mr-2 h-4 w-4 text-gray-500" />
@@ -51,20 +51,25 @@ const CriticalWritings: React.FC<CriticalWritingsProps> = ({ writings }) => {
                   <MapPin className="mr-2 h-4 w-4 text-gray-500" />
                   <span className="font-medium">Location:</span> {writing.location}
                 </div>
-                <div className="flex items-center">
-                  <Calendar className="mr-2 h-4 w-4 text-gray-500" />
-                  <span className="font-medium">Year:</span> {writing.year}
-                </div>
-                <div className="flex items-center">
-                  <FileText className="mr-2 h-4 w-4 text-gray-500" />
-                  <span className="font-medium">Pages:</span> {writing.pages}
-                </div>
                 {writing.translatedBy && (
                   <div className="flex items-center">
                     <BookOpen className="mr-2 h-4 w-4 text-gray-500" />
                     <span className="font-medium">Translated by:</span> {writing.translatedBy}
                   </div>
                 )}
+
+              </div>
+            </div>
+
+            {/* The Year and Pages section at the bottom */}
+            <div className="mt-auto pt-2 border-t flex justify-between gap-2 border-gray-200 dark:border-gray-800">
+              <div className="flex items-center">
+                <Calendar className="mr-2 h-4 w-4 text-gray-500" />
+                <span className="font-medium">Year:</span> {writing.year}
+              </div>
+              <div className="flex items-center">
+                <FileText className="mr-2 h-4 w-4 text-gray-500" />
+                <span className="font-medium">Pages:</span> {writing.pages}
               </div>
             </div>
           </div>
