@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 const Contact = () => {
   return (
     <div>
-      <Title title="let's get in touch" description="Say hello! Use the form or details below for any inquiries or collaborations." background={banner} />
+      <Title title="Let's get in touch" description="Say hello! Use the form or details below for any inquiries or collaborations." background={banner} />
       {/* content */}
       <div className="max-w-6xl mx-auto py-6">
       <Section>
