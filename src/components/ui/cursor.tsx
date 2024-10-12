@@ -57,7 +57,7 @@ const CustomCursor: React.FC = () => {
     height: '10px', // Change size as needed
     borderRadius: '50%',
     backgroundColor: clicking
-      ? 'rgb(26, 117, 49,0.5)'
+      ? 'rgb(51, 103, 209, 0.5)'
       : hovering
       ? 'rgb(26, 117, 49,0.5)'
       : 'rgb(239, 232, 14,0.5)',
