@@ -38,7 +38,7 @@ export function Cards({ book }: CardsProps) {
           <Drawer>
             <DrawerTrigger asChild>
               <div
-                className="mt-4 text-center text-xl text-blue-600 hover:underline cursor-pointer min-h-16"
+                className="mt-4 text-center text-xl text-gray-500 hover:text-gray-800  transition-colors duration-1000 cursor-pointer min-h-16"
                 title={book.title}
               >
                 {book.title.length > 25

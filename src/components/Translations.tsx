@@ -19,11 +19,11 @@ const Translations = () => {
               className="md:basis-1/3 lg:basis-1/5"
               key={translation.title || index}
             >
-              <div className="bg-white rounded-lg shadow my-5 w-64 p-5  mx-auto flex items-center justify-center transition-transform transform hover:scale-105">
+              <div className="bg-white rounded-lg shadow my-5 w-64 px-8 py-4  mx-auto flex items-center justify-center transition-transform transform hover:scale-105">
                   <div className="space-y-4">
                     <h3 className="text-lg font-medium min-h-20" title={translation.title}>
                       {translation.title.length > 25
-                        ? `${translation.title.substring(0, 35)}...`
+                        ? `${translation.title.substring(0, 45)}...`
                         : translation.title}
                     </h3>
                     <div className="flex items-center gap-2">

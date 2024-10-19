@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import backgroundImg from './assets/topography.svg';
+import backgroundImg from '/paper-bg.avif';
 
 import Work from "./pages/Work";
 import Essays from "./pages/Essays";
