@@ -1,7 +1,5 @@
 import { Title } from "@/components/typography/Title";
 import banner from "../assets/sections/reading.avif";
-import { essays } from "../lib/essays";
-import EssayPreview from "@/components/EssayPreview";
 import CriticalWritings from "@/components/CriticalWriting";
 
 const criticalWritings = {
