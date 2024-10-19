@@ -7,7 +7,7 @@ function Interviews() {
   return (
     <div>
       <Title title="Interviews" description="Explore my collection of insightful interviews, delving into diverse topics with thoughtful conversations and unique perspectives." background={banner} />
-      <div className="max-w-6xl mx-auto py-6">
+      <div className="max-w-6xl mx-auto py-6 px-6 lg:px-0">
         {
           interviews.map((interview,index)=> (
             <div className="mb-4">
