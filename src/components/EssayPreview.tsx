@@ -28,7 +28,7 @@ const EssayPreview: React.FC<InterviewProps> = ({ interview }) => {
   };
 
   return (
-    <div className="flex flex-col p-5 bg-white shadow border-b-4 border-gray-300 h-full">
+    <div className="flex flex-col p-5 bg-white shadow border-b-4 border-gray-300 h-full rounded-lg">
       <Link target="_blank" to={interview.link} className="flex items-center text-gray-500 hover:text-gray-800">
         {renderIcon(interview.type)}
         <h2 className="scroll-m-20  text-3xl font-medium tracking-tight first:mt-0 w-full transition-colors duration-1000">
