@@ -61,10 +61,10 @@ const CustomCursor: React.FC = () => {
       : hovering
       ? 'rgb(26, 117, 49,0.5)'
       : 'rgb(239, 232, 14,0.5)',
-    pointerEvents: 'none', // Prevents cursor from interfering with mouse events
+    pointerEvents: 'none',
     transition: 'transform 0.2s, background-color 0.6s',
     transform: `translate(-50%, -50%) scale(${clicking ? 2 : 1})`,
-    zIndex: 9999, // Ensure it is above other elements
+    zIndex: 9999,
   };
 
   return <div style={{ ...cursorStyle, left: position.x, top: position.y }} />;

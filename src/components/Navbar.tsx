@@ -5,7 +5,7 @@ import { Menu } from 'lucide-react'; // Replaced with Lucide icon
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 bg-white flex h-20 w-full items-center px-4 md:px-6 border-y z-10">
+    <header className="sticky top-0 bg-white flex h-16 w-full items-center px-4 md:px-6 border-y z-10">
       <Sheet>
         <SheetTrigger asChild>
           <Button className="lg:hidden" size="icon" variant="outline">
@@ -24,8 +24,8 @@ export function Navbar() {
             <Link className="flex w-full items-center py-2 text-lg font-semibold hover:text-gray-600 transition-colors duration-300" to="/essays">
               Essays
             </Link>
-            <Link className="flex w-full items-center py-2 text-lg font-semibold hover:text-gray-600 transition-colors duration-300" to="/contact">
-              Contact
+            <Link className="flex w-full items-center py-2 text-lg font-semibold hover:text-gray-600 transition-colors duration-300" to="/interviews">
+              Interviews
             </Link>
           </div>
         </SheetContent>
@@ -52,10 +52,16 @@ export function Navbar() {
         </Link>
         <Link
           className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-transform hover:text-gray-600 hover:scale-105 duration-300"
+          to="/interviews"
+        >
+          Interviews
+        </Link>
+        {/* <Link
+          className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-sm font-medium transition-transform hover:text-gray-600 hover:scale-105 duration-300"
           to="/contact"
         >
           Contact
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );

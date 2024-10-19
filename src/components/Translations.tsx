@@ -11,7 +11,7 @@ import { User, BookOpen, Calendar, FileText } from "lucide-react"; // Importing 
 
 const Translations = () => {
   return (
-    <section className="container mx-auto py-12 px-4 md:px-6">
+    <section className="container mx-auto px-4 md:px-6">
       <Carousel className="w-full">
         <CarouselContent>
           {publications.translations.map((translation, index: number) => (

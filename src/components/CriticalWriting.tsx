@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Users, MapPin, Calendar, FileText, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 type Writing = {
   title: string;
@@ -26,9 +27,11 @@ const CriticalWritings: React.FC<CriticalWritingsProps> = ({ writings }) => {
           className="rounded-xl overflow-hidden bg-white shadow-lg dark:bg-gray-950 dark:shadow-none transition-transform transform hover:scale-105 flex flex-col"
         >
           <div className="p-6 flex flex-col flex-grow">
+          <Link to={`/essay/${writing.title.replace(/\s+/g, '-').toLowerCase()}`}>
             <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
               {writing.title}
             </h3>
+          </Link>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
               {writing.details}
             </p>

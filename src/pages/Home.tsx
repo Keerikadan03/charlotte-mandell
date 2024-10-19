@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, Linkedin } from 'lucide-react';
+import { Twitter, Linkedin } from 'lucide-react';
 import authorimg from "../assets/author-img.png";
 
 const Home = () => {
@@ -57,7 +57,7 @@ const Home = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <X size={24} />
+              <Twitter size={24} />
             </motion.a>
             <motion.a
               href="#"

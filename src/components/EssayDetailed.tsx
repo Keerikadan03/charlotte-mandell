@@ -18,8 +18,8 @@ const EssayDetailed = () => {
 
   const title = formatTitle(essay.title);
   return (
-    <div className="bg-white max-w-6xl mx-auto min-h-screen">
-      <div className="flex items-center gap-6">
+    <div className="bg-white max-w-4xl mx-auto min-h-screen mt-6">
+      <div className="flex mx-auto justify-center pt-8 items-center gap-6">
         <TitleSection title={title} />
       </div>
       <div className="flex flex-col justify-center items-center p-4 max-w-6xl text-justify">

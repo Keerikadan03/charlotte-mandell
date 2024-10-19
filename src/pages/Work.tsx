@@ -4,34 +4,8 @@ import TitleSection from "@/components/typography/TitleSection";
 import Collection from "@/components/Collection";
 import Translations from "@/components/Translations";
 import Section from "@/components/Section";
-import CriticalWritings from "@/components/CriticalWriting";
 import AwardsAndHonors from "@/components/Awards";
 
-const criticalWritings = {
-  writings: [
-    {
-      title: "A Language of Absence",
-      details: "Reflections on the death of Maurice Blanchot",
-      publication: "Nowhere Without No: In Memory of Maurice Blanchot",
-      editors: "Kevin Hart",
-      publisher: "Vagabond Press",
-      location: "Sydney",
-      year: "2003",
-      pages: "pp. 23-24",
-    },
-    {
-      title: "Blanchot en Amérique",
-      details: "On translating Blanchot",
-      translatedBy: "Christophe Bident",
-      publication: "Maurice Blanchot: Récits Critiques",
-      editors: "Christophe Bident and Pierre Vilar",
-      publisher: "Farrago",
-      location: "Paris",
-      year: "2003",
-      pages: "pp. 215-217",
-    },
-  ],
-};
 
 const awardsAndHonors = {
   items: [
@@ -111,7 +85,7 @@ const awardsAndHonors = {
 
 const Work = () => {
   return (
-    <div className="p-4">
+    <div>
       <Title
         title="Bibliography"
         description="Catalogs of my published works—books, articles, translations and..."
@@ -119,7 +93,7 @@ const Work = () => {
       />
 
       {/* content */}
-      <div className="max-w-6xl mx-auto  py-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-0  py-8">
 
         {/* published books */}
         <Section>
@@ -131,12 +105,6 @@ const Work = () => {
         <Section>
           <TitleSection title="Translations appearing in periodicals and collections" />
           <Translations />
-        </Section>
-
-        {/* Critical Writing */}
-        <Section>
-        <TitleSection title="Critical Writing" />
-          <CriticalWritings writings={criticalWritings.writings}/>
         </Section>
 
         {/* awards & honors */}
